@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link
+          href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          crossorigin="anonymous"
+    >
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="main.html">Главная</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+ <div class="container my-3">
+ <h1>Блог о спорте</h1>
+ </div>
+
+ <div class="container my-8">
+     <p>Данный блог будет рассказывать о текущих событиях в спорте</p>
+ <hr>
+ <div class="row">
+  <div class="col">
+     <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=cf1dbfc37693d5a72fd0e52794e2c8b6_l-8918938-images-thumbs&n=13"
+           class="card-img-top" alt="Олимпиада">
+       <div class="card-body">
+         <h5 class="card-title">Олимпиада 2024</h5>
+         <p class="card-text">Открытие Олимпиады в Париже</p>
+           <a href="article_1.html" class="btn btn-info"
+              data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-custom-class="custom-tooltip"
+              data-bs-title="Нажмите чтобы читать">
+              Читать
+           </a>
+       </div>
+     </div>
+   </div>
+  <div class="col">
+          <div class="card">
+           <img src="https://avatars.mds.yandex.net/i?id=2a000001911bdcba94ed9e2975e590ae575f-939652-fast-images&n=13"
+                class="card-img-top" alt="Кто получил предложение руки и сердца на Олимпиаде в Париже">
+            <div class="card-body">
+              <h5 class="card-title">Романтика на Олимпиаде в Париже</h5>
+              <p class="card-text">Предложение руки и сердца на Олимпиаде в Париже</p>
+                <a href="article_2.html" class="btn btn-info"
+                   data-bs-toggle="tooltip" data-bs-placement="top"
+                   data-bs-custom-class="custom-tooltip"
+                   data-bs-title="Нажмите чтобы читать">
+                   Читать
+                </a>
+            </div>
+          </div>
+        </div>
+ </div>
+ </div>
+ <script
+     src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+     crossorigin="anonymous">
+ </script>
+
+ <script>
+     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+</body>
+</html>
